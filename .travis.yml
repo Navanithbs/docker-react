@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Navanithbs/docker-react -f Dockerfile.dev .
+  - docker build -t navanithbs/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Navanithbs/docker-react npm run test
+  - docker run -e CI=true navanithbs/docker-react npm run test
